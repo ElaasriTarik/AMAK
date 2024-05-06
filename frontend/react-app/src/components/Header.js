@@ -5,7 +5,7 @@ import ModeSwitcher from './ModeSwitcher';
 import '../styles/header.css';
 
 export default function Header({ mode, setMode, style }) {
-    console.log(style);
+    //console.log(style);
     return (
         <div className="app-nav">
             <nav className="navBar" style={style}>

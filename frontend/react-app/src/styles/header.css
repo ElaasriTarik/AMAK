@@ -21,16 +21,20 @@
     text-decoration: none;
     font-size: .95rem;
     font-weight: 500;
+    padding: .5rem .6rem;
+    border-radius: 8px;
 }
 
 .app-nav nav a:hover {
     color: #fcd4d4;
+    animation: color-fade-in .3s linear;
+    animation-fill-mode: forwards;
 }
 
 .app-nav nav ul {
     display: flex;
     list-style: none;
-    gap: 1rem;
+    gap: .1rem;
 }
 
 .app-nav nav ul li {
@@ -72,6 +76,18 @@
 }
 
 .signupBtn:hover {
-    background-color: #fff;
-    color: #000;
+    animation: color-fade-in .3s linear;
+    animation-fill-mode: forwards;
+    background-color: transparent;
+}
+
+@keyframes color-fade-in {
+    0% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #ffffff45;
+        color: white;
+    }
 }
