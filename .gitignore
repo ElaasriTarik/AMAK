@@ -3,3 +3,5 @@ server/venv
 .env
 
 *db.sqlite3
+
+frontend/react-app/node_modules
