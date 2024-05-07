@@ -6,12 +6,12 @@ import Body from './components/Body';
 import './styles/index.css'
 
 function App() {
-  const [mode, setMode] = useState(false);
+  const [mode, setMode] = useState(true);
 
-  // useEffect(() => {
-  //   setMode(mode)
-  // }, [mode]);
-  //console.log(mode)
+  useEffect(() => {
+    setMode(mode)
+  }, [mode]);
+  console.log(mode)
   const appStyles = mode ? { backgroundColor: '#898989' } : { backgroundColor: '#131d22' };
 
   return (

@@ -5,8 +5,9 @@ export default function ModeSwitcher({ mode, setMode }) {
     const [isActive, setIsActive] = useState(false);
 
     const handleClick = () => {
+        console.log(mode);
         setIsActive(!isActive);
-        setMode(prev => !prev);
+        setMode(!mode);
     }
 
     return (
