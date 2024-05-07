@@ -1,0 +1,44 @@
+.home-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    min-width: 20rem;
+    height: auto;
+    position: relative;
+    max-width: 25rem;
+}
+
+.home-inputs-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+    width: 100%;
+}
+
+.home-inputs .input {
+    width: 100%;
+    position: relative;
+}
+
+.home-inputs input {
+    width: 100%;
+    padding: 15px 30px;
+    margin: 7px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: .9rem;
+    position: relative;
+}
+
+.input-icons {
+    position: absolute;
+    width: 17px;
+    height: auto;
+    top: 34%;
+    left: 1.5%;
+    z-index: 100;
+}

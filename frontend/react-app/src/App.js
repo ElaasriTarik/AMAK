@@ -12,7 +12,8 @@ function App() {
     setMode(mode)
   }, [mode]);
   console.log(mode)
-  const appStyles = mode ? { backgroundColor: '#898989' } : { backgroundColor: '#131d22' };
+  const appStyles = mode ? { backgroundColor: '#898989', transform: 'backgroundColor 1s eas-in-out' } :
+    { backgroundColor: '#131d22', transform: 'backgroundColor 1s eas-in-out' };
 
   return (
     <div className="App">

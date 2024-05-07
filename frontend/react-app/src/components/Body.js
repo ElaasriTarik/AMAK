@@ -1,4 +1,5 @@
 import React from 'react';
+import HomeInputs from './HomeInputs';
 //import Lottie from 'react-lottie';
 //import animationData from '../illustrations/Animation - 1714994312770.json';
 import '../styles/index.css';
@@ -12,9 +13,9 @@ export default function Body({ mode }) {
             {!mode ? { backgroundColor: 'rgb(11, 11, 11)', color: 'white' } : { backgroundColor: '#fff', color: 'black' }}>
             <div className="hero-content">
                 <div className='hero-text'>
-                    <h1 style={stylesForText}>WELCOME TO OUR WEBSITE</h1>
-                    <p style={stylesForText}>Discover the best services for your car</p>
-                    <button className='getStartedBtn' style={stylesForText}>Get Started</button>
+                    <h1 style={stylesForText}>Welcome to our website</h1>
+                    <p style={stylesForText} className='welcome-slogan'>Discover the best services for your car</p>
+                    <HomeInputs />
                 </div>
                 <div className="hero-img">
                     <img src={img} alt="hero-img" className='cover-img' />
