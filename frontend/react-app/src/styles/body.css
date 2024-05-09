@@ -1,5 +1,5 @@
 .hero {
-    background-color: #070b0e;
+    background-color: #000e16;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -32,6 +32,7 @@
     gap: 1rem;
     align-items: flex-start;
     justify-content: center;
+    max-width: 32rem;
 
 }
 
@@ -61,9 +62,10 @@
 }
 
 .hero-content h1 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     font-weight: 800;
     margin-bottom: -15px;
+    text-align: left;
 }
 
 .hero-content .welcome-slogan {
@@ -86,4 +88,45 @@
 .getStartedBtn:hover {
     background-color: #f5c2a9;
     color: #232121;
+}
+
+@media screen and (max-width: 868px) {
+    body {
+        padding: 4rem 1rem 1rem 1rem;
+        background-color: rgb(11, 11, 11);
+    }
+
+    .hero-content {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+        height: auto;
+        background-color: transparent;
+        width: 100%;
+        padding-left: 1rem;
+        min-height: 100%;
+        height: auto;
+    }
+
+    .hero-text {
+
+        text-align: left;
+        min-width: 90%;
+        max-width: 70%;
+    }
+
+    .hero-img {
+        min-width: 90%;
+        max-width: 95%;
+        height: auto;
+        max-height: 20rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content .welcome-slogan {
+        font-size: 1rem;
+    }
 }

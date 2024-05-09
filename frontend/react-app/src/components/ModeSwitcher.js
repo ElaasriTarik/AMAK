@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import '../styles/modeSwitcher.css'
 
 export default function ModeSwitcher({ mode, setMode }) {
-    const [isActive, setIsActive] = useState(false);
+    const [isActive, setIsActive] = useState(true);
 
     const handleClick = () => {
         console.log(mode);

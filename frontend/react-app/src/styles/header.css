@@ -16,6 +16,8 @@
     height: 3.4rem;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     margin-bottom: 2rem;
 }
@@ -46,7 +48,7 @@
 
 }
 
-.app-nav img {
+.app-nav .logo img {
     width: 4rem;
     height: 4rem;
 }
@@ -94,4 +96,76 @@
         background-color: #ffffff45;
         color: white;
     }
+}
+
+@media screen and (max-width: 868px) {
+    .app-nav nav {
+        padding: 10px 10px;
+    }
+
+    .app-nav .logo img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .app-nav nav a {
+        font-size: .8rem;
+    }
+
+    .loginArea .loginBtn,
+    .signupBtn {
+        padding: 0.4rem .8rem;
+        font-size: .8rem;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .mobile-header-titles {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 3.4rem;
+        right: 0;
+        background-color: #171a1c;
+        width: 100%;
+        /* max-height: 0; */
+        height: 100vh;
+        padding: 1rem;
+        /* transition: max-height 0.5s ease-in-out; */
+
+    }
+
+    .mobile-header-titles li a {
+        color: #fff;
+        font-size: 2.3rem;
+        padding: .5rem .6rem;
+        margin: .5rem 1rem;
+        border-radius: 8px;
+        font-weight: 500;
+
+    }
+
+    .mobile-header-titles.open {
+        max-height: 100vh;
+        /* expand to full height when open */
+    }
+
+    @keyframes displayMenu {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
+
+.hamburger-img {
+    width: 1.4rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    display: flex;
+    cursor: pointer;
 }

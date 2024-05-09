@@ -6,7 +6,7 @@ import Body from './components/Body';
 import './styles/index.css'
 
 function App() {
-  const [mode, setMode] = useState(true);
+  const [mode, setMode] = useState(false);
 
   useEffect(() => {
     setMode(mode)
