@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../icons/logo.svg';
-import ModeSwitcher from './ModeSwitcher';
-
 import '../styles/header.css';
+import ModeSwitcher from './ModeSwitcher';
+import Services_header from './Services_header'
+
+
 
 export default function Header({ mode, setMode, style }) {
     //console.log(style);
@@ -22,14 +24,6 @@ export default function Header({ mode, setMode, style }) {
     }
 
     useEffect(() => {
-
-        // if (isActive) {
-        //     const menu = document.querySelector('.mobile-header-titles');
-        //     menu.classList.add('mobile-header-titles.open');
-        // } else {
-        //     const menu = document.querySelector('.mobile-header-titles');
-        //     menu.classList.remove('mobile-header-titles.open');
-        // }
         if (windowWidth < 868) {
             if (isActive) {
                 document.querySelector('.mobile-header-titles').style.display = 'flex';
@@ -39,6 +33,15 @@ export default function Header({ mode, setMode, style }) {
         }
 
     })
+    // check if any title is clicked... and do whatever styling needed
+    const services = document.querySelector('.services')
+
+    const [titleState, setTitleState] = useState(false);
+
+    function changeTitleState() {
+        setTitleState(!titleState)
+    }
+
     return (
         <div className="app-nav">
             <nav className="navBar" style={style}>
@@ -48,10 +51,10 @@ export default function Header({ mode, setMode, style }) {
                 {windowWidth > 868 ? (
                     <>
                         <ul className='header-titles'>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="../index.js">Home</a></li>
+                            <li><a href="services.js" className='services' onMouseOver={changeTitleState} onMouseLeave={changeTitleState}>Services</a></li>
+                            <li><a href="about.js">About</a></li>
+                            <li><a href="contact.js">Contact</a></li>
                         </ul>
                         <div className='loginArea'>
                             <ModeSwitcher mode={mode} setMode={setMode} />
@@ -69,15 +72,16 @@ export default function Header({ mode, setMode, style }) {
                             <img src="https://img.icons8.com/ios/50/ffffff/menu--v5.png" alt="menu" className="hamburger-img" onClick={displayMenu} />
                             <div className='mobile-header'>
                                 <ul className='mobile-header-titles'>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="../index.js">Home</a></li>
+                                    <li><a href="services.js" className='services' onMouseOver={changeTitleState} onMouseLeave={changeTitleState}>Services</a></li>
+                                    <li><a href="about.js">About</a></li>
+                                    <li><a href="contact.js">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 )}
+                {titleState && <Services_header />}
             </nav>
         </div>
     );
