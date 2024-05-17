@@ -15,11 +15,11 @@
 .hero-content {
     display: flex;
 
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 100vh;
-    gap: 3rem;
+    gap: 1rem;
     padding: 0 0 0 3rem;
 }
 
@@ -62,8 +62,8 @@
 }
 
 .hero-content h1 {
-    font-size: 2.6rem;
-    font-weight: 800;
+    font-size: 2.4rem;
+    font-weight: 700;
     margin-bottom: -15px;
     text-align: left;
 }
@@ -90,7 +90,23 @@
     color: #232121;
 }
 
-@media screen and (max-width: 868px) {
+.objects {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1100px) {
+    .hero-text h1 {
+        font-size: 2.1rem;
+
+    }
+
+    .hero-text .welcome-slogan {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 968px) {
     body {
         padding: 4rem 1rem 1rem 1rem;
         background-color: rgb(11, 11, 11);

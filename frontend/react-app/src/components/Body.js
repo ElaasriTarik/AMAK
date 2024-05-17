@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import HomeInputs from './HomeInputs';
+import objects from '../illustrations/OBJECTS.svg'
 //import Lottie from 'react-lottie';
 //import animationData from '../illustrations/Animation - 1714994312770.json';
 import '../styles/body.css';
@@ -23,14 +24,14 @@ export default function Body({ mode, style }) {
             }}>
             <div className="hero-content">
                 <div className='hero-text'>
-                    <h1 style={stylesForText}>find top-rated parts,
-                        and connect with local mechanics – all right here!</h1>
+                    <h1 style={stylesForText}>Connect with local mechanics – all right here!</h1>
                     <p style={stylesForText} className='welcome-slogan'>Discover the best services for your car</p>
                     <HomeInputs mode={mode} />
                 </div>
-                <div className="hero-img">
+                {/* {<div className="hero-img">
                     <img src={img} alt="hero-img" className='cover-img' />
-                </div>
+                </div>} */}
+                <img src={objects} alt="objects" className='objects' />
             </div>
         </div>
     )
