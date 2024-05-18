@@ -17,7 +17,7 @@ export default function LoginPage() {
                         </div>
                         <div className="form-group">
                             <label htmlFor="password">Password</label>
-                            <input type="password" id="password" name="password" required />
+                            <input type="password" id="password" name="password" required placeholder='password' />
                         </div>
 
                         <button className='login-btn'>login</button>

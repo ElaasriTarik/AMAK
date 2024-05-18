@@ -24,7 +24,7 @@ export default function Body({ mode, style }) {
             }}>
             <div className="hero-content">
                 <div className='hero-text'>
-                    <h1 style={stylesForText}>Connect with local mechanics – all right here!</h1>
+                    <h1 style={stylesForText}>Connect with local mechanics – right here!</h1>
                     <p style={stylesForText} className='welcome-slogan'>Discover the best services for your car</p>
                     <HomeInputs mode={mode} />
                 </div>

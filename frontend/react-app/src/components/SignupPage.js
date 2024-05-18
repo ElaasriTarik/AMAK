@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import gear from '../illustrations/gear.svg';
 import tool from '../illustrations/tool.svg';
 
 import '../styles/signup.css';
@@ -27,15 +28,18 @@ export default function SignupPage() {
                             <label htmlFor="password">Password</label>
                             <input type="password" id="password" name="password" required placeholder='password' />
                         </div>
-                        <button className='signup-btn'>Signup</button>
+                        <button className='signup-btn'>Sign up</button>
 
                         <p className='login-link'>
-                            Already have an account? <Link to="/login">Login
+                            Already have an account? <Link to="/login">Log-in
                             </Link>
                         </p>
 
                     </form>
                     <div>
+                        <div className='gear-icon-container'>
+                            <img src={gear} className='gear-icon' alt='gear icon' />
+                        </div>
                         {/* {<img src={tool} alt="tool" className='tool' />} */}
                         <svg id="sw-js-blob-svg" className='blob-signin' viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1">
                             <defs>
