@@ -4,7 +4,10 @@ import logo from '../icons/logo.svg';
 import '../styles/header.css';
 import ModeSwitcher from './ModeSwitcher';
 import Services_header from './Services_header'
-
+import home from '../icons/home.svg';
+import services from '../icons/services.svg';
+import about from '../icons/about.svg';
+import contact from '../icons/contact.svg';
 
 export default function Header({ mode, setMode, style }) {
     //console.log(style);
@@ -51,10 +54,14 @@ export default function Header({ mode, setMode, style }) {
                 {windowWidth > 868 ? (
                     <>
                         <ul className='header-titles'>
-                            <li><Link to='/'>Home</Link></li>
-                            <li><Link to="services.js" className='services' onMouseOver={changeTitleState} onMouseLeave={changeTitleState}>Services</Link></li>
-                            <li><Link to="about.js">About</Link></li>
-                            <li><Link to="contact.js">Contact</Link></li>
+                            <li><img src={home} alt="home" className='header-title-icon' />
+                                <Link to='/'>Home</Link></li>
+                            <li><img src={services} alt="services" className='header-title-icon' />
+                                <Link to="services.js" className='services' onMouseOver={changeTitleState} onMouseLeave={changeTitleState}>Services</Link></li>
+                            <li><img src={about} alt="about" className='header-title-icon' />
+                                <Link to="about.js">About</Link></li>
+                            <li><img src={contact} alt="contact" className='header-title-icon' />
+                                <Link to="contact.js">Contact</Link></li>
                         </ul>
                         <div className='loginArea'>
                             <ModeSwitcher mode={mode} setMode={setMode} />

@@ -1,10 +1,14 @@
 import React, { useEffect } from 'react';
 import HomeInputs from './HomeInputs';
+import ServicesBody from './services-body';
 import objects from '../illustrations/OBJECTS.svg'
+import triangle from '../illustrations/triangle.svg'
+import chains from '../illustrations/chains.svg'
+import screwDriver from '../illustrations/screwDriver.svg'
 //import Lottie from 'react-lottie';
 //import animationData from '../illustrations/Animation - 1714994312770.json';
 import '../styles/body.css';
-import img from '../images/2150377026.jpg';
+
 export default function Body({ mode, style }) {
     //console.log(mode);
     const stylesForText = !mode ? { color: 'white' } : { color: 'black' };
@@ -13,13 +17,13 @@ export default function Body({ mode, style }) {
     const bodyElelement = document.getElementsByTagName('body');
     // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
-        bodyElelement[0].style.backgroundColor = !mode ? 'rgb(11, 11, 11)' : 'rgb(228, 228, 228)';
+        bodyElelement[0].style.backgroundColor = !mode ? 'rgb(26, 26, 26)' : 'rgb(228, 228, 228)';
         bodyElelement[0].style.color = !mode ? 'white' : 'black';
     }, [mode]);
 
-    return (
+    return (<>
         <div className="hero" style=
-            {!mode ? { backgroundColor: 'rgb(11, 11, 11)', color: 'white' } : {
+            {!mode ? { backgroundColor: 'rgb(26, 26, 26)', color: 'white' } : {
                 backgroundColor: '#e4e4e4',
             }}>
             <div className="hero-content">
@@ -32,7 +36,12 @@ export default function Body({ mode, style }) {
                     <img src={img} alt="hero-img" className='cover-img' />
                 </div>} */}
                 <img src={objects} alt="objects" className='objects' />
+
             </div>
+            <img src={triangle} alt="triangle" className='triangle-ill' />
+            <img src={chains} alt="chains" className='chains-ill' />
         </div>
+        <ServicesBody />
+    </>
     )
 }

@@ -6,7 +6,7 @@ import Body from './components/Body';
 import './styles/index.css'
 
 function App() {
-  const [mode, setMode] = useState(false);
+  const [mode, setMode] = useState(true);
 
   useEffect(() => {
     setMode(mode)
@@ -16,7 +16,7 @@ function App() {
   document.getElementsByTagName('body').style = bodyBG;
   console.log(mode)
   const appStyles = mode ? { backgroundColor: '#898989', transform: 'backgroundColor 1s eas-in-out' } :
-    { backgroundColor: '#131d22', transform: 'backgroundColor 1s eas-in-out' };
+    { backgroundColor: 'rgb(6, 8, 9)', transform: 'backgroundColor 1s eas-in-out' };
 
   return (
     <div className="App">
