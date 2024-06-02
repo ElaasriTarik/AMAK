@@ -8,6 +8,7 @@ import home from '../icons/home.svg';
 import services from '../icons/services.svg';
 import about from '../icons/about.svg';
 import contact from '../icons/contact.svg';
+import gear from '../illustrations/gear.svg';
 
 export default function Header({ mode, setMode, style }) {
     //console.log(style);
@@ -49,7 +50,7 @@ export default function Header({ mode, setMode, style }) {
         <div className="app-nav">
             <nav className="navBar" style={style}>
                 <div className='logo'>
-                    <img src={logo} alt="logo" />
+                    <img src={gear} alt="logo" />
                 </div>
                 {windowWidth > 868 ? (
                     <>

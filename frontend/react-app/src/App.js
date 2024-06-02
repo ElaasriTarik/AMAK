@@ -15,7 +15,7 @@ function App() {
   const bodyBG = !mode ? { backgroundColor: 'rgb(11, 11, 11)', color: 'white' } : { backgroundColor: 'rgb(228, 228, 228)', color: 'black' };
   document.getElementsByTagName('body').style = bodyBG;
   console.log(mode)
-  const appStyles = mode ? { backgroundColor: '#898989', transform: 'backgroundColor 1s eas-in-out' } :
+  const appStyles = mode ? { backgroundColor: '#a7bfbe', transform: 'backgroundColor 1s eas-in-out' } :
     { backgroundColor: 'rgb(6, 8, 9)', transform: 'backgroundColor 1s eas-in-out' };
 
   return (

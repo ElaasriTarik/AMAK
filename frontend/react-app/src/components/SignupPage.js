@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import gear from '../illustrations/gear.svg';
 import tool from '../illustrations/tool.svg';
 
+
 import '../styles/signup.css';
 import '../styles/login.css';
 export default function SignupPage() {
@@ -41,6 +42,10 @@ export default function SignupPage() {
 
                         <p className='login-link'>
                             Already have an account? <Link to="/login">Log-in
+                            </Link>
+                        </p>
+                        <p className='login-link'>
+                            Are you a service provider? <Link to="/signup_provider">Sign-up here
                             </Link>
                         </p>
 

@@ -5,6 +5,7 @@ import objects from '../illustrations/OBJECTS.svg'
 import triangle from '../illustrations/triangle.svg'
 import chains from '../illustrations/chains.svg'
 import screwDriver from '../illustrations/screwDriver.svg'
+import contentBg from '../illustrations/content-bg.svg'
 //import Lottie from 'react-lottie';
 //import animationData from '../illustrations/Animation - 1714994312770.json';
 import '../styles/body.css';
@@ -27,6 +28,7 @@ export default function Body({ mode, style }) {
                 backgroundColor: '#e4e4e4',
             }}>
             <div className="hero-content">
+                <img src={contentBg} alt="content-bg" className='content-bg' />
                 <div className='hero-text'>
                     <h1 style={stylesForText}>Connect with local mechanics – right here!</h1>
                     <p style={stylesForText} className='welcome-slogan'>Discover the best services for your car</p>

@@ -6,7 +6,7 @@ import '../styles/homeInputs.css';
 export default function HomeInputs({ mode }) {
 
     // getting mode and setting the right style for the input fields
-    const inputStyle = mode ? { backgroundColor: 'rgb(126, 126, 126)', color: 'white' } : {
+    const inputStyle = mode ? { backgroundColor: 'rgb(186, 190, 185);', color: '#262626' } : {
         backgroundColor: '#e4e4e4',
         color: 'black'
     };

@@ -5,6 +5,7 @@ import mechanic from '../illustrations/mechanic2.jpg';
 import carWash from '../illustrations/carwash.svg';
 
 import screwDriver from '../illustrations/screwDriver.svg'
+import gearServicesIcon from '../icons/services.svg'
 
 export default function ServicesBody() {
     return (
@@ -12,7 +13,10 @@ export default function ServicesBody() {
             <div className="services-container">
                 <img src={screwDriver} alt="screwdriver" className='screwdriver-ill' />
                 <img src={screwDriver} alt="screwdriver" className='screwdriver-ill-2' />
-                <h1>Our Services</h1>
+                <div className="services-header">
+                    <img src={gearServicesIcon} alt="gear" className='gear-icon' />
+                    <h1>Our Services</h1>
+                </div>
                 <div className="services">
                     <div className='service'>
                         <div className="service-img">

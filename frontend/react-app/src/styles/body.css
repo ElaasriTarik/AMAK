@@ -21,12 +21,21 @@
     height: 100vh;
     gap: 1rem;
     padding: 0 0 0 2.5rem;
+    position: relative;
+    z-index: 100;
+}
+
+.content-bg {
+    position: absolute;
+    max-width: 40rem;
+    z-index: -1;
+    left: -2rem;
 }
 
 .landing-page-animation {}
 
 .hero-text {
-    color: #fff;
+    color: #2d2d2d;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -77,13 +86,14 @@
 .getStartedBtn {
     padding: .8rem .9rem;
     background-color: #92e3a9;
-    color: #232121;
+    color: #3a3636;
     /* color: #fff; */
     border: none;
     border-radius: 0.5rem;
-    font-size: .9rem;
+    font-size: .84rem;
     font-weight: 700;
     cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(255, 0, 0, 0.1);
 }
 
 .getStartedBtn:hover {
