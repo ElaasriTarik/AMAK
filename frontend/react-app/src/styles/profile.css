@@ -56,6 +56,7 @@
     height: auto;
     min-height: 33rem;
     margin-left: auto;
+    position: relative;
 }
 
 .profile-area .profile-details h3,
@@ -174,4 +175,57 @@
 
 .details .detail input:hover {
     border: none;
+}
+
+/* styling History area and items */
+.historyItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    width: 100%;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.historyItems .historyItem {
+    width: 100%;
+    min-height: 5rem;
+    height: auto;
+    background-color: #ebebeb;
+    border-radius: 3px;
+    color: #494646;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: .5rem;
+    gap: .3rem;
+}
+
+.history .historyItem * {
+    color: #494646;
+}
+
+.historyItems .historyItem .moreInfo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.historyItems .serviceDate {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.historyItems .servicePrice {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.historyItems .serviceTitle {
+    font-weight: 700;
+    font-size: 1rem;
 }

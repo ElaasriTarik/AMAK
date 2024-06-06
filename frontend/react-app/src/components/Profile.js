@@ -2,6 +2,55 @@ import React from 'react';
 import Header from './Header';
 import '../styles/profile.css';
 import person from '../images/person-profile.svg';
+
+// a history separate component
+function HistoryServices(props) {
+    console.log(props);
+    return (
+        <div className='historyItem'>
+            <h4 className='serviceTitle'>{props.item.title}</h4>
+            <p className='comment'>{props.item.description}</p>
+            <div className='moreInfo'>
+                <p className='servicePrice'>{props.item.price}$</p>
+                <p className='serviceDate'>{props.item.date}</p>
+            </div>
+        </div>
+    )
+}
+// an array to test the history services
+const userHistory = [
+    {
+        title: 'Oil Change',
+        description: 'Changed the oil and oil filter',
+        price: 75.00,
+        date: '2022-01-01'
+    },
+    {
+        title: 'Brake Inspection',
+        description: 'Inspected the brake pads and rotors',
+        price: 50.00,
+        date: '2022-01-15'
+    },
+    {
+        title: 'Tire Rotation',
+        description: 'Rotated the tires for even wear',
+        price: 30.00,
+        date: '2022-02-01'
+    },
+    {
+        title: 'Air Filter Replacement',
+        description: 'Replaced the air filter',
+        price: 45.00,
+        date: '2022-02-15'
+    },
+    {
+        title: 'Battery Replacement',
+        description: 'Replaced the car battery',
+        price: 120.00,
+        date: '2022-03-01'
+    },
+    // ...other history items...
+];
 export default function Profile() {
     const [condition, changeCondition] = React.useState(true);
 
@@ -106,6 +155,11 @@ export default function Profile() {
                 </div>
                 <div className='history'>
                     <h3>history</h3>
+                    <div className='historyItems'>
+                        {userHistory.map((item, index) => (
+                            <HistoryServices item={item} key={index} />
+                        ))}
+                    </div>
                 </div>
             </div>
         </>
