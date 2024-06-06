@@ -40,7 +40,7 @@
     flex: 1;
     width: 18%;
     height: auto;
-    min-height: 33rem;
+    max-height: 33rem;
 }
 
 .profile-area .profile-details,
@@ -228,4 +228,28 @@
 .historyItems .serviceTitle {
     font-weight: 700;
     font-size: 1rem;
+}
+
+@media screen and (max-width: 868px) {
+    .profile-area {
+        flex-direction: column;
+        margin-top: 0rem;
+
+    }
+
+    .profile-area .profile-details,
+    .profile-area .vehicle-details,
+    .profile-area .profile-image-name {
+        width: 100%;
+    }
+
+    .profile-area .profile-image-name {
+        max-height: 13rem;
+        max-width: 10rem;
+        margin: auto;
+    }
+
+    .profile-area .history {
+        width: 100%;
+    }
 }

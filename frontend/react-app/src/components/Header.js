@@ -85,7 +85,7 @@ export default function Header({ mode, setMode, style }) {
                             <div className='mobile-header'>
                                 <ul className='mobile-header-titles'>
                                     <li><Link to='/'>Home</Link></li>
-                                    <li><Link to="services.js" className='services' onMouseOver={changeTitleState} onMouseLeave={changeTitleState}>Services</Link></li>
+                                    <li><Link to="services.js" className='menu-services' onMouseOver={changeTitleState} onMouseLeave={changeTitleState}>Services</Link></li>
                                     <li><Link to="about.js">About</Link></li>
                                     <li><Link to="contact.js">Contact</Link></li>
                                 </ul>
