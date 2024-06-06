@@ -14,6 +14,7 @@ export default function Profile() {
         editProfile.addEventListener('click', () => {
             console.log('clicked');
             changeCondition(prev => !prev)
+
             saveBtnStyles = {
                 filter: 'grayscale(.3)',
             }
@@ -102,6 +103,9 @@ export default function Profile() {
                             <button className='save-profile-btn' style={saveBtnStyles}>Save</button>
                         </div>
                     </div>
+                </div>
+                <div className='history'>
+                    <h3>history</h3>
                 </div>
             </div>
         </>
