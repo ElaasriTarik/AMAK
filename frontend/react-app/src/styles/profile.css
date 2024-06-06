@@ -52,19 +52,35 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 1rem;
 }
 
 .edit-profile-btn {
     padding: .5rem .7rem;
-    background-color: #a4d9f0;
+    background-color: #1b2a30;
     color: #262626;
     font-size: 12px;
     font-weight: 600;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    color: #dbdbdb;
+}
+
+.save-profile-btn {
+    padding: .5rem .7rem;
+    background-color: #7becdb;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     color: #363333;
+}
+
+.save-profile-btn:hover {
+    filter: grayscale(.3);
 }
 
 .profile-area .profile-details,

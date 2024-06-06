@@ -9,7 +9,7 @@ export default function SignupForProviders() {
             <div className="signup-provider-form">
 
                 <form>
-                    <h2>service provider account</h2>
+                    <h2>service provider</h2>
                     <div class="group">
                         <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className='icon'>
                             <circle cx="12" cy="6" r="4" stroke="#1C274C" stroke-width="1.5" />
