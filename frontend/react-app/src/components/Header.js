@@ -58,11 +58,11 @@ export default function Header({ mode, setMode, style }) {
                             <li><img src={home} alt="home" className='header-title-icon' />
                                 <Link to='/'>Home</Link></li>
                             <li><img src={services} alt="services" className='header-title-icon' />
-                                <Link to="services.js" className='services' onMouseOver={changeTitleState} onMouseLeave={changeTitleState}>Services</Link></li>
+                                <Link to="services.html" className='services' onMouseOver={changeTitleState} onMouseLeave={changeTitleState}>Services</Link></li>
                             <li><img src={about} alt="about" className='header-title-icon' />
-                                <Link to="about.js">About</Link></li>
+                                <Link to="about.html">About</Link></li>
                             <li><img src={contact} alt="contact" className='header-title-icon' />
-                                <Link to="contact.js">Contact</Link></li>
+                                <Link to="contact.html">Contact</Link></li>
                         </ul>
                         <div className='loginArea'>
                             <ModeSwitcher mode={mode} setMode={setMode} />
@@ -85,9 +85,9 @@ export default function Header({ mode, setMode, style }) {
                             <div className='mobile-header'>
                                 <ul className='mobile-header-titles'>
                                     <li><Link to='/'>Home</Link></li>
-                                    <li><Link to="services.js" className='menu-services' onMouseOver={changeTitleState} onMouseLeave={changeTitleState}>Services</Link></li>
-                                    <li><Link to="about.js">About</Link></li>
-                                    <li><Link to="contact.js">Contact</Link></li>
+                                    <li><Link to="services.html" className='menu-services' onMouseOver={changeTitleState} onMouseLeave={changeTitleState}>Services</Link></li>
+                                    <li><Link to="about.html">About</Link></li>
+                                    <li><Link to="contact.html">Contact</Link></li>
                                 </ul>
                             </div>
                         </div>

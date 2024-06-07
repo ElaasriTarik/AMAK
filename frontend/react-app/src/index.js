@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import App from './App';
 import './styles/index.css';
-
+import Footer from './components/Footer'
 ReactDOM.render(
     <Router>
         <Header />
@@ -20,5 +20,6 @@ ReactDOM.render(
             <Route path="profile" element={<Profile />} />
             <Route path="signup_provider" element={<SignupForProviders />} />
         </Routes>
+        <Footer />
     </Router>
     , document.getElementById('root'));

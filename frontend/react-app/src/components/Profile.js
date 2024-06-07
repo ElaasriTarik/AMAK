@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header';
+// import Header from './Header';
 import '../styles/profile.css';
 import person from '../images/person-profile.svg';
 
@@ -92,7 +92,6 @@ export default function Profile() {
     }
     return (
         <>
-            <Header />
             <div className="profile-area">
                 <div className='profile-image-name'>
                     <div className='profile-image'>
