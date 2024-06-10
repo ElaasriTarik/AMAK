@@ -62,7 +62,7 @@ export default function Header({ mode, setMode, style }) {
                             <li><img src={about} alt="about" className='header-title-icon' />
                                 <Link to="about.html">About</Link></li>
                             <li><img src={contact} alt="contact" className='header-title-icon' />
-                                <Link to="contact.html">Contact</Link></li>
+                                <Link to="/contact">Contact</Link></li>
                         </ul>
                         <div className='loginArea'>
                             <ModeSwitcher mode={mode} setMode={setMode} />
@@ -87,7 +87,7 @@ export default function Header({ mode, setMode, style }) {
                                     <li><Link to='/'>Home</Link></li>
                                     <li><Link to="services.html" className='menu-services' onMouseOver={changeTitleState} onMouseLeave={changeTitleState}>Services</Link></li>
                                     <li><Link to="about.html">About</Link></li>
-                                    <li><Link to="contact.html">Contact</Link></li>
+                                    <li><Link to="/contact">Contact</Link></li>
                                 </ul>
                             </div>
                         </div>

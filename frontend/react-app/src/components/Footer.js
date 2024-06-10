@@ -56,6 +56,26 @@ export default function Footer() {
                     <p>Contact</p>
                 </a>
             </div>
+            <div className="usefullLinks set3">
+                <div>
+                    <div class="linksTitle">Services</div>
+                </div>
+                <a href="/">
+                    <p>Mecanics</p>
+                </a>
+                <a href="/">
+                    <p>Car wash</p>
+                </a>
+                <a href="/">
+                    <p>Spare parts</p>
+                </a>
+                <a href="/">
+                    <p>Cal vulcanizers</p>
+                </a>
+                <a href="/">
+                    <p>Towing</p>
+                </a>
+            </div>
             <div className="socialMediaIcons">
                 <div className="socialIconBox">
                     <Link to={'facebook.com'}>
