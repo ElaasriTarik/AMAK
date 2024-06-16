@@ -12,11 +12,11 @@ function App() {
     setMode(mode)
   }, [mode]);
 
-  const bodyBG = !mode ? { backgroundColor: 'rgb(11, 11, 11)', color: 'white' } : { backgroundColor: 'rgb(228, 228, 228)', color: 'black' };
+  const bodyBG = !mode ? { backgroundColor: '#e5efef', color: 'white' } : { backgroundColor: '#e5efef', color: 'black' };
   document.getElementsByTagName('body').style = bodyBG;
   console.log(mode)
-  const appStyles = mode ? { backgroundColor: '#a7bfbe', transform: 'backgroundColor 1s eas-in-out' } :
-    { backgroundColor: 'rgb(6, 8, 9)', transform: 'backgroundColor 1s eas-in-out' };
+  const appStyles = mode ? { backgroundColor: 'transparent', transform: 'backgroundColor 1s eas-in-out' } :
+    { backgroundColor: '#e5efef', transform: 'backgroundColor 1s eas-in-out' };
 
   return (
     <div className="App">

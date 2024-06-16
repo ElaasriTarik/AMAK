@@ -13,6 +13,7 @@
     background-color: rgb(8, 10, 11);
     background-color: rgb(6, 8, 9);
     background-color: #a7bfbe;
+    background-color: transparent;
     color: #262626;
     width: 100%;
     height: 3.4rem;
@@ -27,7 +28,7 @@
 .app-nav nav .header-titles a {
     color: #444;
     text-decoration: none;
-    font-size: .95rem;
+    font-size: 1.05rem;
     font-weight: 501;
     padding: .5rem .6rem;
     border-radius: 8px;
@@ -43,6 +44,7 @@
     display: flex;
     list-style: none;
     gap: .1rem;
+    margin-right: auto;
 }
 
 .app-nav nav .header-titles li {
@@ -55,7 +57,7 @@
 }
 
 .app-nav .logo img {
-    max-width: 2.3rem;
+    max-width: 3.7rem;
     height: auto;
 }
 
@@ -80,6 +82,8 @@
 .signupBtn {
     background-color: transparent;
     color: #fff;
+    color: #2d2d2d;
+    box-shadow: 0 0 1px -0.5px #2d2d2d;
 }
 
 .loginBtn:hover {
@@ -88,13 +92,12 @@
 }
 
 .signupBtn:hover {
-    animation: color-fade-in .3s linear;
-    animation-fill-mode: forwards;
-    background-color: transparent;
+    box-shadow: 0 0 1px -0.4px #2d2d2d;
 }
 
 .header-title-icon {
     width: 1.1rem;
+    display: none;
 }
 
 @keyframes color-fade-in {

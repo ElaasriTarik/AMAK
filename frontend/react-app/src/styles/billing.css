@@ -113,7 +113,7 @@
 .infoSection .total {
     background-color: #e2e2e2;
     padding: .5rem;
-    width: 111.3%;
+    width: 100%;
     align-self: center;
 
 }
@@ -171,8 +171,8 @@
     width: 40%;
     border-radius: 4px;
     border: none;
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.rem;
+    font-weight: 600;
     background-color: #92e3a9;
     color: #353535;
     padding: 0.8rem .5rem;
@@ -186,6 +186,10 @@
 
 /* for smaller screen */
 @media screen and (max-width: 868px) {
+    body {
+        padding: 0;
+    }
+
     .billingContainer {
         flex-direction: column-reverse;
         gap: 1rem;
@@ -200,5 +204,9 @@
         min-width: 80%;
         max-width: 90%;
         height: 25rem;
+    }
+
+    .payBtn {
+        font-size: .9rem;
     }
 }

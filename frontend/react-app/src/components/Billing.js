@@ -19,7 +19,15 @@ export default function Billing() {
         cvv: ''
     }
     const [data, setdata] = React.useState(inputData);
-
+    function handleChange(e) {
+        const { id, value } = e.target;
+        setdata(prev => {
+            return {
+                ...prev,
+                [id]: value
+            }
+        })
+    }
     function clickOption(event) {
         const allOptions = document.querySelectorAll('.opt');
         setPaymentMethod(prev => !prev);
@@ -40,7 +48,7 @@ export default function Billing() {
             <div className="billingContainer">
                 <div className="billingMethods">
                     {!paymentMethod && <PayOptions clickOption={clickOption} />}
-                    {paymentMethod && <CardPay styles={styles} />}
+                    {paymentMethod && <CardPay styles={styles} handleChange={handleChange} />}
                 </div>
 
 
@@ -79,26 +87,26 @@ export default function Billing() {
     )
 }
 
-function CardPay() {
+function CardPay({ handleChange }) {
     return (
         <div className="inputContainer">
             <div className="basicInfoInputs">
                 <label htmlFor="cardHolderName">Card holder</label>
-                <input type="text" id="cardHolderName" placeholder="Name on card" />
+                <input type="text" id="cardHolderName" placeholder="Name on card" onChange={(e) => handleChange(e)} />
 
             </div>
             <div className="basicInfoInputs">
                 <label htmlFor="cardNumber">Card number</label>
-                <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" />
+                <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" onChange={(e) => handleChange(e)} />
             </div>
             <div className="split">
                 <div className="basicInfoInputs">
                     <label htmlFor="expiryDate">Expiry date</label>
-                    <input type="text" id="expiryDate" placeholder="MM/YY" />
+                    <input type="text" id="expiryDate" placeholder="MM/YY" onChange={(e) => handleChange(e)} />
                 </div>
                 <div className="basicInfoInputs">
                     <label htmlFor="cvv">CVV</label>
-                    <input type="text" id="cvv" placeholder="000" />
+                    <input type="text" id="cvv" placeholder="000" onChange={(e) => handleChange(e)} />
                 </div>
             </div>
             <button className="payBtn">Pay Now</button>

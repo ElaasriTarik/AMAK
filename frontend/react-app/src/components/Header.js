@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../icons/logo.svg';
+import logo from '../icons/logo1.png';
 import '../styles/header.css';
 import ModeSwitcher from './ModeSwitcher';
 import Services_header from './Services_header'
@@ -50,7 +50,7 @@ export default function Header({ mode, setMode, style }) {
         <div className="app-nav">
             <nav className="navBar" style={style}>
                 <div className='logo'>
-                    <img src={gear} alt="logo" />
+                    <img src={logo} alt="logo" />
                 </div>
                 {windowWidth > 868 ? (
                     <>

@@ -16,6 +16,7 @@ body {
     padding: 4px 2px;
     background-color: #e5ffff;
     transition: background-color 0.6s ease-out;
+    display: none;
 }
 
 .outer_circle {

@@ -18,7 +18,7 @@ export default function Body({ mode, style }) {
     const bodyElelement = document.getElementsByTagName('body');
     // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
-        bodyElelement[0].style.backgroundColor = !mode ? 'rgb(26, 26, 26)' : 'rgb(228, 228, 228)';
+        bodyElelement[0].style.backgroundColor = !mode ? 'rgb(26, 26, 26)' : '#e5efef';
         bodyElelement[0].style.color = !mode ? 'white' : 'black';
     }, [mode]);
 

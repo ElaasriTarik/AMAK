@@ -44,9 +44,9 @@ body {
     align-items: center;
     width: 25rem;
     height: 80%;
-    background-color: #000;
+    background-color: #e5efef;
     border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(147, 147, 147, 0.1);
+    box-shadow: 0 0 10px 7px rgba(147, 147, 147, 0.1);
     position: relative;
     overflow: hidden;
 }

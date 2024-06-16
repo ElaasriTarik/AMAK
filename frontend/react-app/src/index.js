@@ -5,10 +5,11 @@ import SignupPage from './components/SignupPage';
 import LoginPage from './components/LoginPage';
 import Profile from './components/Profile';
 import SignupForProviders from './components/signup-for-providers';
-import Billing from './components/Billing';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import App from './App';
+import Billing from './components/Billing';
 import './styles/index.css';
 import Footer from './components/Footer'
 ReactDOM.render(
