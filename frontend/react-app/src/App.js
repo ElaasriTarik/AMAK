@@ -16,11 +16,11 @@ function App() {
   document.getElementsByTagName('body').style = bodyBG;
   console.log(mode)
   const appStyles = mode ? { backgroundColor: 'transparent', transform: 'backgroundColor 1s eas-in-out' } :
-    { backgroundColor: '#e5efef', transform: 'backgroundColor 1s eas-in-out' };
+    { backgroundColor: 'rgb(6, 8, 9)', transform: 'backgroundColor 1s eas-in-out' };
 
   return (
     <div className="App">
-      <Header mode={mode} setMode={setMode} style={appStyles} />
+      {/* <Header mode={mode} setMode={setMode} style={appStyles} /> */}
       <Body mode={mode} style={bodyBG} />
     </div>
   )

@@ -22,7 +22,8 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
+    position: relative;
 }
 
 .app-nav nav .header-titles a {

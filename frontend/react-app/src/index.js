@@ -12,6 +12,8 @@ import App from './App';
 import Billing from './components/Billing';
 import './styles/index.css';
 import Footer from './components/Footer'
+
+
 ReactDOM.render(
     <Router>
         <Header />

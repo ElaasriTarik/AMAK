@@ -23,10 +23,12 @@ export default function Body({ mode, style }) {
     }, [mode]);
 
     return (<>
-        <div className="hero" style=
-            {!mode ? { backgroundColor: 'rgb(26, 26, 26)', color: 'white' } : {
-                backgroundColor: '#e4e4e4',
-            }}>
+        <div className="hero"
+        // style=
+        // {!mode ? { backgroundColor: 'rgb(26, 26, 26)', color: 'white' } : {
+        //     backgroundColor: '#e4e4e4',
+        // }}
+        >
             <div className="hero-content">
                 <img src={contentBg} alt="content-bg" className='content-bg' />
                 <div className='hero-text'>
