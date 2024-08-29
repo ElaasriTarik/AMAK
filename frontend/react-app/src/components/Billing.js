@@ -4,7 +4,7 @@ import creditCardsIcon from '../images/card.webp';
 import paypalIcon from '../images/paypal.webp';
 import googlePayIcon from '../images/googlepay.webp';
 import securePayment from '../images/securePayment.png';
-// import e from "cors";
+
 export default function Billing() {
   const [paymentMethod, setPaymentMethod] = React.useState(false);
 
